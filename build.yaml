@@ -41,4 +41,4 @@ jobs:
           ls -al
           echo running on branch ${GITHUB_REF##*/}
           mv app-debug.apk app-$buildID.apk
-          gsutil cp app-$buildID.apk gs://andriod-apk-files/${GITHUB_REF##*/}
+          gsutil cp app-$buildID.apk gs://[bucket name]/${GITHUB_REF##*/}
